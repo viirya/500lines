@@ -1250,6 +1250,7 @@ System.get("traceur-runtime@0.0.24/src/runtime/polyfill-import" + '');
                   coord = $coord;
                   if (sheet[$traceurRuntime.toProperty(coord)] == '') {
                     delete sheet[$traceurRuntime.toProperty(coord)];
+                    $traceurRuntime.setProperty(cache, coord, 0);
                     continue;
                   }
                   for (var $__2 = ['', '$'][$traceurRuntime.toProperty(Symbol.iterator)](),
